@@ -1,0 +1,36 @@
+---
+
+import Carousel from './Carousel.astro';
+---
+<div class="hero">
+    <div class="hero__button">Copilot Enterprise now available</div>
+    <div class="hero__video-content">
+      <div class="lp-Hero-videoContainer" role="img" aria-label="A demonstration animation of a code editor using GitHub Copilot Chat, where the user requests GitHub Copilot to generate unit tests for a given code snippet.">
+        <video autoplay="" playsinline="" muted="" class="lp-Hero-video lp-Hero-video--landscape hide-reduced-motion" width="1248" height="735" poster="https://github.githubassets.com/assets/hero-poster-18f705106687.webp"><source src="https://github.githubassets.com/assets/hero-lg-6a98e47708e8.mp4" type="video/mp4; codecs=avc1.4d002a"></video>
+        <img alt="Editor with GitHub Copilot Chat" class="Primer_Brand__Image-module__Image___FgVuK lp-Hero-videoImage hide-no-pref-motion" width="1248" src="/images/modules/site/copilot/hero.jpg" loading="lazy" decoding="async"></div>
+      </div>
+    <Carousel/>
+</div>
+
+<style lang="scss">
+  .hero {
+    background-image: url('https://github.githubassets.com/assets/hero-bg-ee8ae9ad2db9.jpg');
+    background-size: cover;
+    background-color: #010101;
+    color: white;
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 60px;
+
+    &__button {
+        background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right, darkblue, darkorchid) border-box;
+        border-radius: 50em;
+        border: 4px solid transparent;
+    }
+  }
+</style>
